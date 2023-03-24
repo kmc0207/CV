@@ -23,7 +23,7 @@ resume_contact_address:         "742 Evergreen Terrace, Springfield"
 resume_header_contact_info:     "742 Evergreen Terrace, Springfield • 555-7334 • lisasimpson@youremailaddress.com"
 display_header_contact_info:    "false"
 
-resume_header_intro: "<p>저는 KAIST 김재철 AI대학원에 석사과정으로 재학중인 권민찬입니다. Image Classification에서의 Continual laerning을 주제로 졸업 연구를 진행하였고, NeurlIPS에 제출하였으나 reject 되었고 현재는 발전시켜 다시 제출을 준비하고 있습니다. 현대자동차 자율주행팀 연구원분들과 함께 도로 위에서의 Semantic Segmentation을 continual 하게 하는 방법을 연구했습니다. 현재는 Vision Transformer를 이용한 Object detection과 Human pose estimation에 대해 흥미가 있고 연구하고 있습니다.</p>"
+resume_header_intro: "<p>저는 KAIST 김재철 AI대학원에 석사과정으로 재학중인 권민찬입니다. Image Classification에서의 Continual laerning을 주제로 연구를 진행하였고, 현재는 Large Language Model에서의 prompt tunning에 대해 연구하고 있습니다.</p>"
 
 # use "yes" to display the email contact button,
 # "no" to display an "I'm not looking for work" message,
