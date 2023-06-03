@@ -23,7 +23,7 @@ resume_contact_address:         "742 Evergreen Terrace, Springfield"
 resume_header_contact_info:     "742 Evergreen Terrace, Springfield • 555-7334 • lisasimpson@youremailaddress.com"
 display_header_contact_info:    "false"
 
-resume_header_intro: "<p>저는 KAIST 김재철 AI대학원에 석사과정으로 재학중인 권민찬입니다. Image Classification에서의 Continual laerning을 주제로 연구를 진행하였고, 현재는 Large Language Model에서의 prompt tunning에 대해 연구하고 있습니다.</p>"
+resume_header_intro: "<p>저는 KAIST 김재철 AI대학원에 석사과정으로 재학중인 권민찬입니다. Stable Diffusion이나 LLM 같은 거대 모델에서 지식을 획득하거나 제거하는 것에 관심이 있습니다. 같은 맥락에서 Continual Learning에 대해서도 연구했었습니다 </p>"
 
 # use "yes" to display the email contact button,
 # "no" to display an "I'm not looking for work" message,
@@ -45,7 +45,7 @@ resume_section_associations:    false
 # Resume social links
 # uncomment the options you wish to display, and add your own URL
 resume_social_links:
-  resume_github_url:            "https://kmc0207.github.io/CV/"
+  resume_github_url:            "https://github.com/kmc0207"
   resume_twitter_url:           "http://twitter.com/"
   resume_dribbble_url:          "https://dribbble.com/"
   # resume_facebook_url:          "insert Facebook URL here"
