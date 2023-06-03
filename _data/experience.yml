@@ -1,12 +1,14 @@
 # Jobs
 # Communications Coordinator
 
-- company : Statistical Inference & INformation Theory Lab (Prof. Junmo Kim)
+- company : Statistical Inference & Information Theory Lab
+  professor : Prof. Junmo Kim
   position : M.S. candidate
   duration : 2022 &mdash; present
   summary : Studying continual learning and large-language models with interest.
 
-- company: Intelligence Representation & Reasoning Lab (Prof. Kangil Kim)
+- company: Intelligence Representation & Reasoning Lab 
+  professor : Prof. Kangil Kim
   position: Research Intern
   duration:   January, 2021  &mdash; 2022
   summary: Wrote a paper about continual learning in image classification.
@@ -14,12 +16,14 @@
   
 # Director of Digital Stratgy
 - company: Bioinformatics and Intelligence Lab (Prof. Hojung Lee)
+  professor : Prof. Hojung Lee
   position: Intern
   duration:  September, 2020 &mdash; December, 2020
   summary: Help data processing in senior's research using Panda and Numpy.
   
 # VP of Global Communications
 - company: Data Mining & Computational Biology Lab (Prof. Hyunju Lee)
+  professor : Prof. Hyunju Lee
   position: Intern
   duration: July, 2020 &mdash; August, 2020
   
