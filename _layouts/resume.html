@@ -100,6 +100,11 @@
       <!-- end Experience -->
       {% endif %}
 
+    <section class="content-section">
+
+      <header class="section-header">
+        <h2>Papers</h2>
+      </header> 
       {% for project in site.data.projects %}
       <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
         <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
@@ -123,10 +128,11 @@
         <p class="resume-item-copy">{{ project.description }}</p>
       </div>
       {% endfor %}
-
       </section>
       <!-- end Projects -->
       {% endif %}
+
+
 
       {% if site.resume_section_skills %}
       <!-- begin Skills -->
