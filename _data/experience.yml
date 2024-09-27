@@ -1,7 +1,15 @@
 # Jobs
 # Communications Coordinator
 
+- company: "Naver"
+  position: "Research Intern"
+  duration: "July 2023 - October 2023"
+  summary: "Developing Large Vision-Language Model(Korean-English multilingual)"
 
+- company: "Innervez"
+  position: "Research Intern"
+  duration: "March 2023 - July 2023"
+  summary: "Developing Generated AI based portrait service"
   
 
 
