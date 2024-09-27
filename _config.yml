@@ -17,13 +17,13 @@ resume_title:                   "About Me"
 resume_contact_email:           "kmc020700@gmail.com"
 
 # the next two items are used for schema itemprops in _layouts/resume.html
-resume_contact_telephone:       "555-7334"
-resume_contact_address:         "742 Evergreen Terrace, Springfield"
+resume_contact_telephone:       ""
+resume_contact_address:         ""
 
-resume_header_contact_info:     "742 Evergreen Terrace, Springfield • 555-7334 • lisasimpson@youremailaddress.com"
-display_header_contact_info:    "false"
+resume_header_contact_info:     ""
+display_header_contact_info:    ""
 
-resume_header_intro: "<p>저는 KAIST 김재철 AI대학원에 석사과정으로 재학중인 권민찬입니다. 모델의 지식을 제거/확장/수정하는 것에 관심이 많습니다. Image Classification에서의 Continual Learning에 대해 연구했었습니다. 현재는 Stabld Diffusion이나 LLM 같은 거대 모델에서 prompt tunning에 대해서 연구하고 있습니다. </p>"
+resume_header_intro: "<p> I'm Ph.D student of KAIST Electrical Engineering. I'm interested in NLP and RL, especially LLM agent, prompt tuning, LLM reasoning. I am a self-motivated person and look forward to collaborating with a wide range of researchers. </p>"
 
 # use "yes" to display the email contact button,
 # "no" to display an "I'm not looking for work" message,
