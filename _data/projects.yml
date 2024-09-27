@@ -2,13 +2,13 @@
 # uncomment the urls if you wish to display them, and add your own URL
 
 # jazznotes.io
-- project: StablePrompt : Automatic Prompt Tuning using Reinforcement Learning for Large Language Model
-  authors: Minchan Kwon, Gaeun Kim, Jongsuk Kim, Haeil Lee, Junmo Kim
+- project: "StablePrompt : Automatic Prompt Tuning using Reinforcement Learning for Large Language Model"
+  authors: "Minchan Kwon, Gaeun Kim, Jongsuk Kim, Haeil Lee, Junmo Kim"
   conference: "EMNLP 2024"
-  description: ""
+  description: " "
 
   
-- project: Revisiting Softmax Masking: Stop Gradient for Enhancing Stability in Replay-based Continual Learning
-  authors: Hoyoung Kim, Minchan Kwon, Kangil Kim
+- project: "Revisiting Softmax Masking: Stop Gradient for Enhancing Stability in Replay-based Continual Learning"
+  authors: "Hoyoung Kim, Minchan Kwon, Kangil Kim"
   conference: "CoLLASW 2024"
-  description: ""
+  description: " "
