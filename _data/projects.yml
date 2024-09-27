@@ -5,10 +5,12 @@
 - project: StablePrompt : Automatic Prompt Tuning using Reinforcement Learning for Large Language Model
   role: Minchan Kwon, Gaeun Kim, Jongsuk Kim, Haeil Lee, Junmo Kim
   duration: Sep. 2024
+  conference: "EMNLP"
   url : paper reddy
 
   
 - project: Revisiting Softmax Masking: Stop Gradient for Enhancing Stability in Replay-based Continual Learning
   role: Hoyoung Kim, Minchan Kwon, Kangil Kim
   duration: Jun. 2024
+  conference: "CoLLASW"
   url : paper reddy
