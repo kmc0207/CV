@@ -23,7 +23,7 @@ resume_contact_address:         ""
 resume_header_contact_info:     "kmc020700@gmail.com &bull; +82-10-8558-1695 &bull; <a href='https://github.com/kmc0207'>github.com/kmc0207</a>"
 display_header_contact_info:    "true"
 
-resume_header_intro: "<p>I am a self-motivated PhD student, deeply interested in the intersection of LLMs and RL. To me, reinforcement learning is essential for enabling LLMs to evolve beyond existing knowledge through interaction with the world. In particular, I believe that diversity and swarm intelligence are the keys to LLM RL.</p><p>My research focuses on enhancing the reasoning capability of LLMs through RL. I believe that the current challenges in RL lie in a lack of diversity and getting stuck in failure modes. For this reason, I am very interested in diversity-based methods such as random sampling and genetic algorithms.</p>"
+resume_header_intro: "<p>I am a self-motivated PhD student, deeply interested in the intersection of LLMs and RL. To me, reinforcement learning is essential for enabling LLMs to evolve beyond existing knowledge through interaction with the world. In particular, I believe that diversity and swarm intelligence are the keys to LLM RL.</p>"
 
 # use "yes" to display the email contact button,
 # "no" to display an "I'm not looking for work" message,

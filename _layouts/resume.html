@@ -52,17 +52,16 @@
 
 
       {% if site.resume_section_projects %}
-      <!-- begin Papers -->
+      <!-- begin First-Author Publications -->
       <section class="content-section">
 
         <header class="section-header">
-          <h2>Papers</h2>
+          <h2>First-Author Publications</h2>
         </header>
-        {% for project in site.data.projects %}
+        {% for project in site.data.projects.first_author %}
         <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
           <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
 
-          <!-- 논문 제목 -->
           <h3 class="resume-item-title" itemprop="name">
             {% if project.url %}
               <a href="{{ project.url }}" itemprop="url">{{ project.project }}</a>
@@ -71,13 +70,9 @@
             {% endif %}
           </h3>
 
-          <!-- 저자 목록 -->
           <h4 class="resume-item-details" itemprop="author">{{ project.authors }}</h4>
-
-          <!-- 학회 이름 및 연도 -->
           <h4 class="resume-item-details" itemprop="description">{{ project.conference }}</h4>
 
-          <!-- Paper / Code 링크 -->
           {% if project.paper_url or project.code_url %}
           <p class="resume-item-links">
             {% if project.paper_url %}<a href="{{ project.paper_url }}" itemprop="url">Paper</a>{% endif %}
@@ -86,12 +81,46 @@
           </p>
           {% endif %}
 
-          <!-- 논문 설명 -->
           <p class="resume-item-copy">{{ project.description }}</p>
         </div>
         {% endfor %}
       </section>
-      <!-- end Papers -->
+      <!-- end First-Author Publications -->
+
+      <!-- begin Co-Author Publications -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Co-Author Publications</h2>
+        </header>
+        {% for project in site.data.projects.co_author %}
+        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
+          <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
+
+          <h3 class="resume-item-title" itemprop="name">
+            {% if project.url %}
+              <a href="{{ project.url }}" itemprop="url">{{ project.project }}</a>
+            {% else %}
+              {{ project.project }}
+            {% endif %}
+          </h3>
+
+          <h4 class="resume-item-details" itemprop="author">{{ project.authors }}</h4>
+          <h4 class="resume-item-details" itemprop="description">{{ project.conference }}</h4>
+
+          {% if project.paper_url or project.code_url %}
+          <p class="resume-item-links">
+            {% if project.paper_url %}<a href="{{ project.paper_url }}" itemprop="url">Paper</a>{% endif %}
+            {% if project.paper_url and project.code_url %} | {% endif %}
+            {% if project.code_url %}<a href="{{ project.code_url }}" itemprop="url">Code</a>{% endif %}
+          </p>
+          {% endif %}
+
+          <p class="resume-item-copy">{{ project.description }}</p>
+        </div>
+        {% endfor %}
+      </section>
+      <!-- end Co-Author Publications -->
       {% endif %}
 
       {% if site.resume_section_education %}
