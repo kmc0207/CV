@@ -1,17 +1,15 @@
 # Degree
-- degree : Ph.D, Electrical Engineering
-  uni : KAIST
-  year : 2024 &mdash; present
+- degree: "Ph.D in Electrical Engineering"
+  uni: "Korea Advanced Institute of Science and Technology (KAIST)"
+  year: "Mar. 2024 &mdash; Present"
+  summary: "Advisor: Prof. Junmo Kim. Daejeon, Korea."
 
-- degree : M.S,  Graduated School of AI
-  uni : KAIST
-  year : 2022 &mdash; 2024
+- degree: "M.S, Graduate School of AI"
+  uni: "Korea Advanced Institute of Science and Technology (KAIST)"
+  year: "Mar. 2022 &mdash; Feb. 2024"
+  summary: "Advisor: Prof. Junmo Kim. Daejeon, Korea."
 
-- degree: BA, Electrical Engineering and Computer Science
-  uni: GIST
-  year: 2018 &mdash; 2022
-  summary: I have minor at Math, Economics. My major is especially computer science. (3.88/4.5)
-
-- degree: High School Diploma
-  uni: Busan Science High School
-  year: 2017
+- degree: "B.S in Electrical Engineering and Computer Science"
+  uni: "Gwangju Institute of Science and Technology (GIST)"
+  year: "Mar. 2018 &mdash; Mar. 2022"
+  summary: "Minor in Math and Economics. TGPA: 3.88/4.5, Major GPA: 4.21/4.5. Gwangju, Korea."

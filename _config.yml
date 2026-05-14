@@ -1,6 +1,6 @@
 # Site settings
-title: "Jekyll Resume Template"
-description: "A resume template for Jekyll and GitHub Pages sites."
+title: "Minchan Kwon - CV"
+description: "Personal CV of Minchan Kwon, Ph.D student at KAIST EE."
 
 # Build settings
 markdown: kramdown
@@ -17,13 +17,13 @@ resume_title:                   "About Me"
 resume_contact_email:           "kmc020700@gmail.com"
 
 # the next two items are used for schema itemprops in _layouts/resume.html
-resume_contact_telephone:       ""
+resume_contact_telephone:       "+82-10-8558-1695"
 resume_contact_address:         ""
 
-resume_header_contact_info:     ""
-display_header_contact_info:    ""
+resume_header_contact_info:     "kmc020700@gmail.com &bull; +82-10-8558-1695 &bull; <a href='https://github.com/kmc0207'>github.com/kmc0207</a>"
+display_header_contact_info:    "true"
 
-resume_header_intro: "<p> I'm Ph.D student of KAIST Electrical Engineering. I'm interested in NLP and RL, especially LLM agent, prompt tuning, LLM reasoning. I am a self-motivated person and look forward to collaborating with a wide range of researchers. </p>"
+resume_header_intro: "<p>I am a self-motivated PhD student, deeply interested in the intersection of LLMs and RL. To me, reinforcement learning is essential for enabling LLMs to evolve beyond existing knowledge through interaction with the world. In particular, I believe that diversity and swarm intelligence are the keys to LLM RL.</p><p>My research focuses on enhancing the reasoning capability of LLMs through RL. I believe that the current challenges in RL lie in a lack of diversity and getting stuck in failure modes. For this reason, I am very interested in diversity-based methods such as random sampling and genetic algorithms.</p>"
 
 # use "yes" to display the email contact button,
 # "no" to display an "I'm not looking for work" message,
@@ -37,7 +37,7 @@ resume_section_experience:      true
 resume_section_education:       true
 resume_section_projects:        true
 resume_section_skills:          false
-resume_section_recognition:     true
+resume_section_recognition:     false
 resume_section_links:           false
 resume_section_associations:    false
 # resume_section_interests:       true
@@ -46,13 +46,6 @@ resume_section_associations:    false
 # uncomment the options you wish to display, and add your own URL
 resume_social_links:
   resume_github_url:            "https://github.com/kmc0207"
-  resume_twitter_url:           "http://twitter.com/"
-  resume_dribbble_url:          "https://dribbble.com/"
-  # resume_facebook_url:          "insert Facebook URL here"
-  resume_linkedin_url:          "https://www.linkedin.com/in/"
-  # resume_instagram_url:         "insert your Instagram URL here"
-  resume_website_url:           "https://brunch.co.kr/@7d4d6f796bfe41d"
-  resume_medium_url:            "https://medium.com/"
 resume_print_social_links:      true
 
 # Design settings

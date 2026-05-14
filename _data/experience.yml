@@ -1,18 +1,6 @@
 # Jobs
-# Communications Coordinator
 
 - company: "Naver"
   position: "Research Intern"
-  duration: "July 2023 - October 2023"
-  summary: "Developing Large Vision-Language Model(Korean-English multilingual)"
-
-- company: "Innervez"
-  position: "Research Intern"
-  duration: "March 2023 - July 2023"
-  summary: "Developing Generated AI based portrait service"
-  
-
-
-
-
-
+  duration: "Jul. 2023 &mdash; Oct. 2023"
+  summary: "Developed a Vision-Language Model based on LLM (Korean and Japanese) for the Naver Maps AI team. Studied model architectures with researchers, and refined Japanese/Korean vision-language data using CLIP score, aesthetic score, and other tools."
