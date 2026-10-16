@@ -24,7 +24,12 @@ first_author:
 co_author:
   - project: "ConceptPrism: Concept Disentanglement in Personalized Diffusion Models via Residual Token Optimization"
     authors: "Minseo Kim, Minchan Kwon, Dongyeun Lee, Yunho Jeon*, Junmo Kim*"
-    conference: "CVPR 2026 &bull; Feb. 2025"
+    conference: "CVPR 2026 &bull; Jun. 2026"
+    description: " "
+
+  - project: "FxSearcher: Gradient-free Text-driven Audio Transformation"
+    authors: "Hojoon Ki, Jongsuk Kim, Minchan Kwon, Junmo Kim"
+    conference: "ICASSP 2026 &bull; Apr. 2026"
     description: " "
 
   - project: "Reducing the Content Bias for AI-generated Image Detection"
