@@ -20,10 +20,10 @@ resume_contact_email:           "kmc020700@gmail.com"
 resume_contact_telephone:       "+82-10-8558-1695"
 resume_contact_address:         ""
 
-resume_header_contact_info:     "kmc020700@gmail.com &bull; +82-10-8558-1695 &bull; <a href='https://github.com/kmc0207'>github.com/kmc0207</a>"
+resume_header_contact_info:     "kmc020700@gmail.com &bull; +82-10-8558-1695 &bull; <a href='https://github.com/kmc0207'>github.com/kmc0207</a> &bull; <a href='https://www.linkedin.com/in/kmc0207'>linkedin.com/in/kmc0207</a>"
 display_header_contact_info:    "true"
 
-resume_header_intro: "<p>I am a self-motivated PhD student, deeply interested in the intersection of LLMs and RL. To me, reinforcement learning is essential for enabling LLMs to evolve beyond existing knowledge through interaction with the world. In particular, I believe that diversity and swarm intelligence are the keys to LLM RL.</p>"
+resume_header_intro: "<p>I am a PhD student at KAIST working on reinforcement learning and LLM post-training. My research focuses on understanding and improving how language models learn from rewards and trajectories, with an emphasis on training stability, diversity, and reasoning. I am particularly interested in developing learning algorithms that help language models acquire new capabilities through interaction and feedback.</p>"
 
 # use "yes" to display the email contact button,
 # "no" to display an "I'm not looking for work" message,
@@ -46,6 +46,7 @@ resume_section_associations:    false
 # uncomment the options you wish to display, and add your own URL
 resume_social_links:
   resume_github_url:            "https://github.com/kmc0207"
+  resume_linkedin_url:          "https://www.linkedin.com/in/kmc0207"
 resume_print_social_links:      true
 
 # Design settings
