@@ -1,0 +1,211 @@
+/* Barron-style academic homepage */
+
+:root {
+  --bg: #ffffff;
+  --text: #1a1a1a;
+  --muted: #666666;
+  --rule: #e6e6e6;
+  --link: #1772d0;
+  --link-hover: #f09228;
+  --highlight: #fffbe0;
+  --tile-bg: #f3f5f8;
+  --tile-text: #2b3a55;
+  --badge-bg: #f09228;
+  --badge-text: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #15171a;
+    --text: #e6e6e6;
+    --muted: #9aa0a6;
+    --rule: #2c3036;
+    --link: #6cb0ff;
+    --link-hover: #ffb35c;
+    --highlight: #23231a;
+    --tile-bg: #22262c;
+    --tile-text: #c9d6ee;
+    --badge-bg: #d97c1a;
+    --badge-text: #15171a;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #15171a;
+  --text: #e6e6e6;
+  --muted: #9aa0a6;
+  --rule: #2c3036;
+  --link: #6cb0ff;
+  --link-hover: #ffb35c;
+  --highlight: #23231a;
+  --tile-bg: #22262c;
+  --tile-text: #c9d6ee;
+  --badge-bg: #d97c1a;
+  --badge-text: #15171a;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Lato", -apple-system, "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+a { color: var(--link); text-decoration: none; }
+a:hover, a:focus { color: var(--link-hover); }
+
+.page {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 40px 16px 48px;
+}
+
+/* Intro */
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding-bottom: 12px;
+}
+.intro-text { flex: 1 1 auto; }
+.intro-photo { flex: 0 0 200px; }
+.intro-photo img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+}
+.name {
+  font-size: 34px;
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
+}
+.affiliation {
+  text-align: center;
+  color: var(--muted);
+  margin: 4px 0 16px;
+}
+.intro p { margin: 0 0 12px; }
+.links {
+  text-align: center;
+  margin-top: 16px !important;
+}
+.links span, .paper-links span { color: var(--muted); margin: 0 6px; }
+
+/* Sections */
+section { margin-top: 28px; }
+h2 {
+  font-size: 22px;
+  font-weight: 400;
+  margin: 0 0 6px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--rule);
+}
+.section-note { color: var(--muted); margin: 0 0 8px; font-size: 14px; }
+
+/* First-author papers */
+.paper {
+  display: flex;
+  gap: 20px;
+  padding: 16px 12px;
+  border-radius: 8px;
+}
+.paper.highlight { background: var(--highlight); }
+.venue-tile {
+  flex: 0 0 140px;
+  height: 110px;
+  border-radius: 8px;
+  background: var(--tile-bg);
+  color: var(--tile-text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.venue-name { font-size: 22px; font-weight: 700; line-height: 1.1; }
+.venue-year { font-size: 15px; opacity: .8; }
+.venue-badge {
+  margin-top: 8px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: var(--badge-bg);
+  color: var(--badge-text);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .02em;
+}
+.paper-body { flex: 1 1 auto; min-width: 0; }
+.paper-title {
+  font-weight: 700;
+  font-size: 16px;
+  display: inline-block;
+  margin-bottom: 2px;
+}
+span.paper-title { color: var(--text); }
+.authors { margin: 2px 0; }
+.authors strong { font-weight: 700; }
+.venue-line { color: var(--text); }
+.award { color: var(--link-hover); font-weight: 700; }
+.paper-links { margin: 4px 0; }
+.tldr { margin: 6px 0 0; }
+
+/* Co-author papers */
+.compact { list-style: none; margin: 0; padding: 0; }
+.compact li { padding: 10px 12px; }
+.compact .paper-title { font-size: 15px; }
+
+/* Experience & education */
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 12px;
+}
+.row-main { min-width: 0; }
+.row-date { flex: 0 0 auto; color: var(--muted); white-space: nowrap; }
+.muted { color: var(--muted); }
+.bullets { margin: 4px 0 0; padding-left: 20px; }
+
+.footer {
+  margin-top: 40px;
+  text-align: right;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* Phone */
+@media (max-width: 640px) {
+  .page { padding-top: 24px; }
+  .intro { flex-direction: column-reverse; gap: 16px; }
+  .intro-photo { flex-basis: auto; }
+  .intro-photo img { width: 150px; height: 150px; }
+  .paper { flex-direction: column; gap: 10px; padding: 14px 8px; }
+  .venue-tile {
+    flex: none;
+    height: auto;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: flex-start;
+    padding: 8px 12px;
+    align-self: flex-start;
+  }
+  .venue-name { font-size: 16px; }
+  .venue-badge { margin-top: 0; }
+  .row { flex-direction: column; gap: 2px; padding: 10px 8px; }
+  .compact li { padding: 10px 8px; }
+}
+
+@media print {
+  .paper.highlight { background: none; }
+  a { color: var(--text); }
+}

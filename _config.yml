@@ -49,6 +49,12 @@ resume_social_links:
   resume_linkedin_url:          "https://www.linkedin.com/in/kmc0207"
 resume_print_social_links:      true
 
+# Barron-style home layout (_layouts/home.html)
+home_affiliation:               "Ph.D. student, School of Electrical Engineering, KAIST"
+home_advisor:                   "Junmo Kim"
+home_advisor_url:               ""
+home_scholar_url:               ""
+
 # Design settings
 resume_theme:                   default
 

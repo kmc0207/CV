@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.resume_name }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+{% assign me = site.resume_name %}
+{% capture me_bold %}<strong>{{ site.resume_name }}</strong>{% endcapture %}
+<main class="page">
+
+  <!-- Intro -->
+  <header class="intro">
+    <div class="intro-text">
+      <h1 class="name">{{ site.resume_name }}</h1>
+      <p class="affiliation">{{ site.home_affiliation }}</p>
+      {{ site.resume_header_intro }}
+      {% if site.home_advisor %}
+      <p>I am advised by
+        {% if site.home_advisor_url != "" %}<a href="{{ site.home_advisor_url }}">{{ site.home_advisor }}</a>{% else %}Prof. {{ site.home_advisor }}{% endif %}.
+      </p>
+      {% endif %}
+      <p class="links">
+        <a href="mailto:{{ site.resume_contact_email }}">Email</a>
+        {% if site.home_scholar_url != "" %}<span>/</span><a href="{{ site.home_scholar_url }}">Scholar</a>{% endif %}
+        {% if site.resume_social_links.resume_github_url %}<span>/</span><a href="{{ site.resume_social_links.resume_github_url }}">GitHub</a>{% endif %}
+        {% if site.resume_social_links.resume_linkedin_url %}<span>/</span><a href="{{ site.resume_social_links.resume_linkedin_url }}">LinkedIn</a>{% endif %}
+      </p>
+    </div>
+    <div class="intro-photo">
+      <img src="images/avatar.jpg" alt="Photo of {{ site.resume_name }}">
+    </div>
+  </header>
+
+  <!-- First-author publications -->
+  <section>
+    <h2>First-Author Publications</h2>
+    <p class="section-note">Highlighted papers were selected as spotlights.</p>
+
+    {% for p in site.data.projects.first_author %}
+    {% assign is_spotlight = false %}
+    {% if p.award contains "Spotlight" %}{% assign is_spotlight = true %}{% endif %}
+    <article class="paper{% if is_spotlight %} highlight{% endif %}">
+      <div class="venue-tile">
+        <span class="venue-name">{{ p.venue | split: " " | first }}</span>
+        <span class="venue-year">{{ p.venue | split: " " | last }}</span>
+        {% if is_spotlight %}<span class="venue-badge">Spotlight</span>{% endif %}
+      </div>
+      <div class="paper-body">
+        {% if p.paper_url %}
+        <a class="paper-title" href="{{ p.paper_url }}">{{ p.project }}</a>
+        {% else %}
+        <span class="paper-title">{{ p.project }}</span>
+        {% endif %}
+        <div class="authors">{{ p.authors | replace: me, me_bold }}</div>
+        <div class="venue-line"><em>{{ p.venue }}</em>{% if p.award %}, <span class="award">{{ p.award }}</span>{% endif %}</div>
+        <div class="paper-links">
+          {% if p.paper_url %}<a href="{{ p.paper_url }}">arXiv</a>{% endif %}
+          {% if p.paper_url and p.code_url %}<span>/</span>{% endif %}
+          {% if p.code_url %}<a href="{{ p.code_url }}">code</a>{% endif %}
+        </div>
+        <p class="tldr">{{ p.description }}</p>
+      </div>
+    </article>
+    {% endfor %}
+  </section>
+
+  <!-- Co-author publications -->
+  <section>
+    <h2>Co-Author Publications</h2>
+    <ul class="compact">
+      {% for p in site.data.projects.co_author %}
+      <li>
+        {% if p.paper_url %}<a class="paper-title" href="{{ p.paper_url }}">{{ p.project }}</a>{% else %}<span class="paper-title">{{ p.project }}</span>{% endif %}
+        <div class="authors">{{ p.authors | replace: me, me_bold }}</div>
+        <div class="venue-line"><em>{{ p.venue }}</em>{% if p.award %}, <span class="award">{{ p.award }}</span>{% endif %}</div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <!-- Experience -->
+  <section>
+    <h2>Experience</h2>
+    {% for job in site.data.experience %}
+    <div class="row">
+      <div class="row-main">
+        <strong>{{ job.company }}</strong>, {{ job.position }}
+        {% if job.bullets %}
+        <ul class="bullets">
+          {% for b in job.bullets %}<li>{{ b }}</li>{% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+      <div class="row-date">{{ job.duration }}</div>
+    </div>
+    {% endfor %}
+  </section>
+
+  <!-- Education -->
+  <section>
+    <h2>Education</h2>
+    {% for edu in site.data.education %}
+    <div class="row">
+      <div class="row-main">
+        <strong>{{ edu.uni }}</strong>
+        <div>{{ edu.degree }}</div>
+        {% if edu.summary %}<div class="muted">{{ edu.summary }}</div>{% endif %}
+      </div>
+      <div class="row-date">{{ edu.year }}</div>
+    </div>
+    {% endfor %}
+  </section>
+
+  <footer class="footer">
+    Website design adapted from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>.
+  </footer>
+</main>
+</body>
+</html>
